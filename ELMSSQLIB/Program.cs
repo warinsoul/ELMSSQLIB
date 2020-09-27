@@ -12,7 +12,7 @@ using DataBaseBibliary;
 using DataBaseBibliary.Model;
 using DataBaseBibliary.Utils;
 
-namespace ConsoleApp8
+namespace ELMSSQLIB
 {
     class Program
     {

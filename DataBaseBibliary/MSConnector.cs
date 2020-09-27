@@ -18,7 +18,7 @@ namespace DataBaseBibliary
         
         public MSConnector(string dbName)
         {
-            ConnectionString = "Persist Security Info=False;User ID=sa_industries;Password=(santos);Initial Catalog=" + dbName + ";Server=UNGGF-SRV-1C";
+            ConnectionString = "*****";
         }
 
         private SqlConnection Connecting()

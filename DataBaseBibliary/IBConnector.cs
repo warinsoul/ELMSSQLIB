@@ -22,12 +22,10 @@ namespace DataBaseBibliary
         private TAdoDbxConnection conn;
         private TAdoDbxCommand upsert;
 
-        /*public IBconnector() {
-            ConectionString = "DriverName=Interbase;Database=DATABASE1:D:\\DEPARTMENT\\INDUSTRIES_YG_TESTER.IB;RoleName=GRANT;User_Name=sysdba;Password=santos;SQLDialect=3;MetaDataAssemblyLoader=Borland.Data.TDBXInterbaseMetaDataCommandFactory,Borland.Data.DbxReadOnlyMetaData,Version=11.0.5000.0,Culture=neutral,PublicKeyToken=91d62ebb5b0d1b1b;GetDriverFunc=getSQLDriverINTERBASE;LibraryName=dbxint30.dll;VendorLib=GDS32.DLL";
-        }*/
+      
         public IBconnector(string TableName,DataColumnCollection columnCollection,string prKey)
         {
-            ConectionString = "DriverName=Interbase;Database=DATABASE1:D:\\DEPARTMENT\\INDUSTRIES_YG_TESTER.IB;RoleName=GRANT;User_Name=sysdba;Password=santos;SQLDialect=3;MetaDataAssemblyLoader=Borland.Data.TDBXInterbaseMetaDataCommandFactory,Borland.Data.DbxReadOnlyMetaData,Version=11.0.5000.0,Culture=neutral,PublicKeyToken=91d62ebb5b0d1b1b;GetDriverFunc=getSQLDriverINTERBASE;LibraryName=dbxint30.dll;VendorLib=GDS32.DLL;ServerCharSet=win1251";
+            ConectionString = "****";
             conn = getConnection(ConectionString);
             string columnName="";
             string upsertColumn="";
