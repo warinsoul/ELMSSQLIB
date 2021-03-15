@@ -76,10 +76,12 @@
     <Compile Include="IBConnector.cs" />
     <Compile Include="Model\Column.cs" />
     <Compile Include="Model\FindForKey.cs" />
+    <Compile Include="Model\LoadEvents.cs" />
     <Compile Include="Model\LoadPackage.cs" />
     <Compile Include="MSConnector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tables.cs" />
+    <Compile Include="Utils\DateTimeUtils.cs" />
     <Compile Include="Utils\SqlMapper.cs" />
     <Compile Include="Utils\TAdoDbxDataCommandExtension.cs">
       <SubType>Component</SubType>

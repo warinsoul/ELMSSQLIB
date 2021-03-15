@@ -1,11 +1,8 @@
-﻿using System;
+﻿using DataBaseBibliary.Model;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataBaseBibliary
 {
@@ -84,6 +81,26 @@ namespace DataBaseBibliary
             }
             packages.Close();
             return loadPackages;
+        }
+
+        public List<LoadEvents> GetLoadEvents()
+        {
+            SqlDataReader events = GetAllData("LoadEvents");
+            List<LoadEvents> eventList = new List<LoadEvents>();
+            while (events.Read())
+            {
+                eventList.Add(
+                    new LoadEvents
+                    {
+                        Id = events.GetInt32(events.GetOrdinal("Id")),
+                        DateTimeEvent = events.GetDateTime(events.GetOrdinal("DateTimeEvent")),
+                        Flag = events.GetBoolean(events.GetOrdinal("Flag")),
+                        CountRow=events.GetInt32(events.GetOrdinal("CountRow"))
+                    }
+                );
+            }
+            events.Close();
+            return eventList;
         }
 
       

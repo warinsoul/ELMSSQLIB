@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseBibliary", "DataBas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ELMSSQLIB", "ELMSSQLIB\ELMSSQLIB.csproj", "{DAF8D2A2-D40A-4782-B25E-781C4AFDD01B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DDL", "DDL", "{A8CD36D9-3AC4-4152-8549-C81E5BF98B32}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Desktop\Запросы\DDL\DDL.sql = ..\..\..\..\Desktop\Запросы\DDL\DDL.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
